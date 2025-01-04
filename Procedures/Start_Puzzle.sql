@@ -1,4 +1,7 @@
-USE [Sudoku]
+-- language detection hint for Linguist
+DECLARE @Linguist varchar(10) = 'T-SQL'
+
+USE Sudoku
 GO
 
 ALTER PROCEDURE Start_Puzzle --

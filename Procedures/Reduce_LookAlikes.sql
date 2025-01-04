@@ -1,3 +1,6 @@
+-- language detection hint for Linguist
+DECLARE @Linguist varchar(10) = 'T-SQL'
+
 USE Sudoku
 GO
 
@@ -96,3 +99,4 @@ BEGIN
 			AND o.[value] <> '_'
 	END
 END
+GO

@@ -1,3 +1,6 @@
+-- language detection hint for Linguist
+DECLARE @Linguist varchar(10) = 'T-SQL'
+
 USE Sudoku
 GO
 
@@ -63,3 +66,4 @@ BEGIN
 		SET @Iteration = @Iteration + 1
 		SET CONTEXT_INFO @Iteration
 END
+GO

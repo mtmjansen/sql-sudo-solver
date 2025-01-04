@@ -1,3 +1,6 @@
+-- language detection hint for Linguist
+DECLARE @Linguist varchar(10) = 'T-SQL'
+
 USE Sudoku
 GO
 
@@ -24,4 +27,3 @@ GROUP BY --
 	m.s
 HAVING count(o.v) BETWEEN 1 AND 8
 GO
-

@@ -1,3 +1,9 @@
+-- language detection hint for Linguist
+DECLARE @Linguist varchar(10) = 'T-SQL'
+
+USE Sudoku
+GO
+
 ALTER PROCEDURE Script_Puzzles AS
 BEGIN
 	SELECT 
@@ -14,3 +20,4 @@ BEGIN
 		)
 	FROM dbo.Puzzles
 END
+GO

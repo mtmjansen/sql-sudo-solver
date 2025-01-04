@@ -1,3 +1,9 @@
+-- language detection hint for Linguist
+DECLARE @Linguist varchar(10) = 'T-SQL'
+
+USE Sudoku
+GO
+
 ALTER PROCEDURE Reset_Options AS
 BEGIN
 	SET NOCOUNT ON
@@ -9,7 +15,7 @@ BEGIN
 		m.*,
 		v = nr
 	FROM Model m
-	FULL JOIN Numbers n
+	INNER JOIN Numbers n
 	ON nr between 1 AND 9
-	WHERE m.i IS NOT NULL
 END
+GO

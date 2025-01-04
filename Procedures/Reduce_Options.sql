@@ -1,3 +1,6 @@
+-- language detection hint for Linguist
+DECLARE @Linguist varchar(10) = 'T-SQL'
+
 USE Sudoku
 GO
 
@@ -103,3 +106,4 @@ BEGIN
 
 	EXEC Reduce_LookAlikes
 END
+GO
